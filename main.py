@@ -1,7 +1,8 @@
-import subprocess
-
+import os
 from person import create_person
 from person_list import create_person_list
+
+os.makedirs("generated/protos", exist_ok=True)
 
 print("Creating person objects and serializing them to a binary file...")
 
