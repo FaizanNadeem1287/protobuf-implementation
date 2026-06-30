@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package mypackage;
+
+message Person {
+  int32 id = 4;
+  string name = 2;
+  string email = 3;
+  repeated string phone_numbers = 1;
+}
+
+message PersonList {
+  repeated Person people = 1;
+}
